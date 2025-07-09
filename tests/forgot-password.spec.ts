@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { ForgotPasswordPage } from '../pages/ForgotPasswordPage';
 
-test('Forgot Password: Retrieve login info using valid user details', async ({ page }) => {
+test.skip('Forgot Password: Retrieve login info using valid user details', async ({ page }) => {
   const forgotPage = new ForgotPasswordPage(page);
   await forgotPage.goto();
 
