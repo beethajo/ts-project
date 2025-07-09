@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../pages/LoginPage';
 
-test.only('Login: Successful login with valid credentials', async ({ page }) => {
+test('Login: Successful login with valid credentials', async ({ page }) => {
   const loginPage = new LoginPage(page);
   await loginPage.goto();
 
