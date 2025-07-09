@@ -5,9 +5,7 @@ test.use({
   baseURL: 'https://playwright.dev/' // ✅ Must include protocol
 });
 
-
-
-test.only('has title', async ({ page }) => {
+test('has title', async ({ page }) => {
   await page.goto('');
   // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle(/Playwright/);
