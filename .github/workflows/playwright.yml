@@ -6,7 +6,7 @@ name: Playwright Tests
   #  branches: [ main, master ]
 on:
   pull_request:
-      types: [opened]  # Triggers only when PR is first created
+      types: [opened, reopened, synchronize]  # Triggers only when PR is first created
       branches:
         - main     
 jobs:
