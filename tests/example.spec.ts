@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 
 test.use({
-  baseURL: 'https://example.com' // ✅ Must include protocol
+  baseURL: 'https://playwright.dev/' // ✅ Must include protocol
 });
 
 
